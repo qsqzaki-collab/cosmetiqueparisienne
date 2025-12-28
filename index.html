@@ -33,6 +33,37 @@ body{
 
 h1{
   text-align: center;
+  /* TITRE BOX (Box Cadeau 1,2,3) */
+.product h3{
+  font-size:22px;
+  font-weight:700;
+  letter-spacing:1px;
+  margin:12px 0 6px;
+  color:#1c1c1c;
+  font-family:"Playfair Display", serif;
+}
+
+/* PRIX */
+.product p{
+  font-size:20px;
+  font-weight:600;
+  color:#c9a93d;
+  margin:8px 0 14px;
+}
+
+/* PETIT EFFET PRO */
+.product{
+  transition:.3s;
+}
+
+.product:hover h3{
+  color:#bfa233;
+}
+
+.product:hover p{
+  transform:scale(1.05);
+}
+
   font-family: "Playfair Display", serif;
   font-size: 44px;
   font-weight: 700;
@@ -264,6 +295,7 @@ ${document.getElementById("total").innerText}`;
 
 </body>
 </html>
+
 
 
 
