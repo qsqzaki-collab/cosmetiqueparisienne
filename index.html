@@ -12,10 +12,27 @@
 <meta name="twitter:card" content="summary_large_image">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+  .input-icon{
+  position: relative;
+}
+
+.input-icon i{
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.input-icon input{
+  padding-left: 35px;
+}
+
 body{
   margin:0;
   font-family:Arial, sans-serif;
@@ -224,14 +241,30 @@ input:focus, select:focus{
 <div class="form" id="orderForm">
   <h2 id="productTitle"></h2>
 
+  <div class="input-icon">
+  <i class="fa-solid fa-user"></i>
   <input id="name" placeholder="Nom et Prénom" required>
-  <input id="phone" placeholder="Téléphone" required>
+</div>
 
+  <div class="input-icon">
+  <i class="fa-solid fa-phone"></i>
+  <input id="phone" placeholder="Téléphone" required>
+</div>
+
+
+  <div class="input-icon">
+  <i class="fa-solid fa-location-dot"></i>
   <select id="wilaya" required>
     <option value="">-- Choisir la wilaya --</option>
   </select>
+</div>
 
+
+  <div class="input-icon">
+  <i class="fa-solid fa-house"></i>
   <input id="commune" placeholder="Commune" required>
+</div>
+
 
   <input type="number" id="qty" value="1" min="1" required>
 
@@ -411,3 +444,4 @@ ${document.getElementById("total").innerText}`;
 
 </body>
 </html>
+
