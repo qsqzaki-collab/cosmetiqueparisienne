@@ -144,8 +144,12 @@ h1{
 
 .product{
   background: rgba(255,255,255,0.05);
-  border-radius: 14px;
+  border-radius: 16px;
   padding: 15px;
+
+  /* ✨ cadre doré */
+  border: 1.5px solid #e6c76e;
+
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -224,11 +228,17 @@ input:focus, select:focus{
 .products .product h3{
   font-family:"Playfair Display", serif;
   font-size:22px;
-  font-weight:700;
+  font-weight:600;
   letter-spacing:1px;
-  color:#111 !important;
+  color:#f7e08a !important;
   margin-top:14px;
+  text-shadow: 0 0 8px rgba(247,224,138,0.6);
 }
+  .price{
+  color: #ffffff;
+  opacity: 0.85;
+  font-weight: 500;
+  }
 
 /* FORCE PRICE STYLE */
 .products .product p{
@@ -712,3 +722,4 @@ ${document.getElementById("total").innerText}`;
 
 </body>
 </html>
+
